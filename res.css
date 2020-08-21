@@ -1,0 +1,133 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    /* background-color: #e6e6e6;
+    padding:10px;*/
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 10vh 80vh 10vh;
+}
+
+.header {
+    background-color: #ffb3b3;
+    padding: 10px;
+    grid-column: 1/-1;
+    display:flex;
+    flex-direction: row;
+    text-align:center;
+}
+
+.logo {
+    background-color: #ffffb3;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid black;
+    padding-top: 5px;
+}
+
+section {
+    float:left;
+    background-color: #dab3ff;
+    padding: 10px;
+    width:300%;
+    font-size: 30px;
+    text-align:center;
+    border:1px;
+   
+}
+
+.content {
+    display:grid;
+    background-color: darkgoldenrod;
+    padding:10px;
+    grid-column: 4/-1;
+}
+
+.flex-container {
+    display: flex;
+}
+.flex-container > div {
+        background-color: #f1f1f1;
+        margin: 10px;
+        height: 10vh;
+        padding: 70px 170px;
+        font-size: 30px;
+        justify-content: center;
+ }
+
+.flex-container2 > div {
+    background-color: #f1f1f1;
+    display: inline-block;
+    margin: 10px 10px 5px 9px;
+    border: 2px;
+    padding: 90px 100px;
+    box-sizing: border-box;
+    font-size: 30px;
+    
+}
+
+.footer {
+    background-color: lightseagreen;
+    padding: 10px;
+    grid-column: 1/-1;
+    font-size: 30px;
+    text-align:center;
+}
+@media(max-width:600px)
+{
+ header{
+     width:100%;
+     height:100%;
+ }
+ section {
+        height: 15%;
+        width: 95%;
+        grid-column: 1/-1;
+        display: grid;
+        text-align: center;
+ }
+ .container {
+        display: grid;
+       
+ }
+ .content {
+        height:70%;
+        width:85%;
+        display:grid;
+        grid-column:1/-1;
+        padding:1px 32px;
+        position:absolute;
+        top:122px;
+
+ }
+
+ .flex-container{
+    
+     padding:9px 0px;
+     display:flex;
+     margin:0;
+     
+
+ }
+ .flex-container > div{
+        display:grid;
+        padding:22px 5px;
+        margin:6px 5px 5px 0px;
+        width:250%;
+        
+       
+        
+ }
+ .flex-container2 > div {
+        display: grid;
+        width:99%;
+        height:30%;
+        padding: 29px;
+        margin-top: 0px;
+        margin:0px 5px 6px 0px  ;
+        text-align: center;
+
+ }
+}
